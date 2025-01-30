@@ -1,7 +1,7 @@
 
 /**
- * GITHUB   :        
- * @author  :   AZMIN
+ * GITHUB   :          https://github.com/aezmine
+ * @author  :           AZMIN
  */
 
 public class Sort01{
