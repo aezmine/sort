@@ -4,7 +4,7 @@
  * @author  :           AZMIN
  */
 
-public class Sort01{
+public class BubbleSort{
     public static void main(String[] args) {
         
         int[] n1 = {10,9,8,2,4,65}; // gonna sort in ascending
