@@ -1,0 +1,44 @@
+/**
+ * GITHUB   :          https://github.com/aezmine
+ * @author  :           AZMIN 
+ * this sort is in ascending, for descending just change the min to max -- buat sendiri aaa ahahhaha
+ */
+public class SelectionSort{
+    public static void main(String[] args) {
+        int[] nums = {8, 7, 2 ,4}; // put any number u want here or can use JOptionPane for manual input in console
+        
+        System.out.println("BEFORE SORT");
+        for(int i: nums){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        
+        selectionSort(nums);
+        System.out.println("AFTER SORT");
+        for(int i: nums){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        
+        
+    }
+    static void  selectionSort(int[] r){
+        // 0 1 2 -- INDEX
+        // 3 1 2
+        for(int i = 0; i < r.length; i ++){
+            int min = i;
+            
+            for(int j = i+1; j < r.length; j++){
+                if(r[min] > j){
+                    min = j;
+                }
+            }
+            
+           int temp = r[i];
+           r[i] = r[min];
+           r[min] = temp;
+            
+        }
+        
+    }
+}
